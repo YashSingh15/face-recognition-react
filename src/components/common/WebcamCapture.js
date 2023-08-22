@@ -1,5 +1,6 @@
 import React from 'react';
 import Webcam from 'react-webcam';
+import Button from '@mui/material/Button';
 
 const WebcamCapture = ({ onCapture }) => {
     const webcamRef = React.useRef(null);
@@ -16,7 +17,9 @@ const WebcamCapture = ({ onCapture }) => {
                 ref={webcamRef}
                 screenshotFormat="image/jpeg"
             />
-            <button onClick={capture}>Capture</button>
+            <Button variant="contained" color="success" onClick={capture}>
+                Capture
+            </Button>
         </div>
     );
 };

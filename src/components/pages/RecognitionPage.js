@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import WebcamCapture from '/Users/yash/Desktop/face-recognition-2/src/components/common/WebcamCapture';
-import UploadSection from '/Users/yash/Desktop/face-recognition-2/src/components/common/UploadSection';
+import WebcamCapture from '../common/WebcamCapture';
+import UploadSection from '../common/UploadSection';
 
 const RecognitionPage = () => {
     const [capturedImage, setCapturedImage] = useState(null);
